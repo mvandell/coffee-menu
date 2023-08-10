@@ -11,7 +11,7 @@ console.log(evenDrinks);
 const allDrinks = coffeeMenu.reduce((total, currentDrink) => total+currentDrink.price,0);//total of all drinks
 console.log("The total of all the drinks is $" + allDrinks);
 
-//seasonal drinks
-
+const seasonalDrinks = coffeeMenu.filter(drink => drink.seasonal === true); //seasonal drinks
+console.log(seasonalDrinks);
 
 //seasonal drinks "with imported beans"
