@@ -14,4 +14,5 @@ console.log("The total of all the drinks is $" + allDrinks);
 const seasonalDrinks = coffeeMenu.filter(drink => drink.seasonal === true); //seasonal drinks
 console.log(seasonalDrinks);
 
-//seasonal drinks "with imported beans"
+seasonalDrinks.forEach(drink => drink.name += ' with imported beans'); //seasonal drinks "with imported beans"
+console.log(seasonalDrinks);
